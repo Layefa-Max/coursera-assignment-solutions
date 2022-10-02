@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.row{
+    width: 100%;
+}
+
+.menu{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: x-large;
+    font-weight: 800;
+}
+
+/* common features of all child div tags */
+.div1, .div2, .div3 {
+    position: relative;
+    border: 2px solid #000;
+    margin-bottom: 30px;
+    background-color: #ddd;
+}
+
+/* common features of first paragraph of each child div tag */
+.div1 .div1p1, .div2 .div2p1, .div3 .div3p1 {
+    position: absolute;
+    top:0;
+    right: 0;
+    border: 2px solid #000; 
+    text-align: center;
+    padding: 5px; 
+    width: 20%;
+    border-top: none;
+    border-right: none;
+}
+
+/* first paragraph of first child div */
+.div1 .div1p1 {
+    background-color: #0ff;  
+}
+
+/* first paragraph of second child div */
+.div2 .div2p1 {
+    background-color: #a52a2a;  
+}
+
+/* first paragraph of third child div */
+.div3 .div3p1 {
+    background-color: #ff7; 
+}
+
+.div1 .div1p2, .div2 .div2p2, .div3 .div3p2 {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding: 50px 15px 10px 15px;
+}
+
+
+/* for desktop */
+@media (min-width: 992px){
+
+    .row{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .div1, .div2, .div3{
+        float: left;
+        width: 27%;
+        margin: 20px;
+    }
+}
+
+
+/* for tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .row{
+        position: relative;
+        margin-left: 12%;
+   
+    }
+
+    .div1, .div2{
+        float: left;
+        width: 37%;
+    }
+
+    .div3{
+        position: absolute;
+        bottom: -339;
+        width: 78%;  
+        margin: 20px;  
+    }
+
+    .div1{
+        margin-left: 19px;
+        margin-right: 35px;
+    }
+
+}
+
+/* for mobile */
+@media (max-width: 767px){
+    .row{
+        margin-left: 10%;
+        margin-right: 50%
+    }
+    .div1, .div2, .div3{
+        width: 80%;
+    }
+}
+
+
+
